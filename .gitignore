@@ -1,0 +1,6 @@
+.streamlit
+venv_llm_ub/
+.env
+*.pyc
+*.DS_Store
+__pycache__/
