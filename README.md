@@ -1,50 +1,40 @@
-# Chatbot Implementations with Langchain + Streamlit
+# Chatbot Implementations with Langchain & Streamlit  
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/shashankdeshpande/langchain-chatbot?quickstart=1)
+This is my personal side project where I explore chatbot implementations using **Langchain** and **Streamlit**. Langchain provides a powerful framework for building AI-driven applications with Language Models (LLMs), while Streamlit helps create interactive web-based interfaces for these chatbots.  
 
-Langchain is a powerful framework designed to streamline the development of applications using Language Models (LLMs). \
-It provides a comprehensive integration of various components, simplifying the process of assembling them to create robust applications.
+## 💡 Chatbot Use Cases  
 
-## 💬 Sample chatbot use cases
-Here are a few examples of chatbot implementations using Langchain and Streamlit:
--  **Basic Chatbot** \
-  Engage in interactive conversations with the LLM.
+I've implemented various chatbot functionalities to test and expand Langchain's capabilities. Here are some of them:  
 
-- **Context aware chatbot** \
-  A chatbot that remembers previous conversations and provides responses accordingly.
+- **Basic Chatbot** – A simple chatbot that interacts with users using an LLM.  
+- **Context-Aware Chatbot** – Maintains conversation history for more meaningful interactions.  
+- **Chatbot with Internet Access** – Fetches real-time information from the web.  
+- **Chat with Your Documents** – Allows users to upload documents and ask questions based on their content.  
+- **Chat with SQL Database** – Interacts with databases using natural language queries.  
+- **Chat with Websites** – Retrieves and summarizes website content based on user queries.  
 
--  **Chatbot with Internet Access** \
-  An internet-enabled chatbot capable of answering user queries about recent events.
+## 🚀 Streamlit App  
 
--  **Chat with your documents** \
-  Empower the chatbot with the ability to access custom documents, enabling it to provide answers to user queries based on the referenced information.
+I built a multi-page **Streamlit** app showcasing these chatbot implementations. You can try it out here:  
+🔗 [langchain-chatbot.streamlit.app](https://langchain-chatbot.streamlit.app)  
 
--  **Chat with SQL database** \
-  Enable the chatbot to interact with a SQL database through simple, conversational commands.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://langchain-chatbot.streamlit.app/)  
 
--  **Chat with Websites** \
-  Enable the chatbot to interact with website contents.
+## 🛠️ Running the Project Locally  
 
-## <img src="https://streamlit.io/images/brand/streamlit-mark-color.png" width="40" height="22"> Streamlit App
-Created a multi-page streamlit app containing all sample chatbot use cases. \
-You can access this app through this link: [langchain-chatbot.streamlit.app](https://langchain-chatbot.streamlit.app)
+If you want to run the chatbot locally, follow these steps:  
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://langchain-chatbot.streamlit.app/)
-
-## 🖥️ Running locally
 ```shell
-# Run main streamlit app
-$ streamlit run Home.py
-```
+# Start the Streamlit app
+streamlit run Home.py
 
-## 📦 Running with Docker
+## 🐳 Running with Docker  
+
+To containerize and run the chatbot using Docker:  
+
 ```shell
-# To generate image
-$ docker build -t langchain-chatbot .
+# Build the Docker image
+docker build -t langchain-chatbot .
 
-# To run the docker container
-$ docker run -p 8501:8501 langchain-chatbot
-```
-
-## 💁 Contributing
-Planning to add more chatbot examples over time. PRs are welcome.
+# Run the Docker container
+docker run -p 8501:8501 langchain-chatbot
