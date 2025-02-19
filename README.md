@@ -16,9 +16,8 @@ I've implemented various chatbot functionalities to test and expand Langchain's 
 ## 🚀 Streamlit App  
 
 I built a multi-page **Streamlit** app showcasing these chatbot implementations. You can try it out here:  
-🔗 [langchain-chatbot.streamlit.app](https://langchain-chatbot.streamlit.app)  
+🔗 [Try it here](https://hemanth-thaluru-llm.streamlit.app)  
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://langchain-chatbot.streamlit.app/)  
 
 ## 🛠️ Running the Project Locally  
 
@@ -27,6 +26,7 @@ If you want to run the chatbot locally, follow these steps:
 ```shell
 # Start the Streamlit app
 streamlit run Home.py
+```
 
 ## 🐳 Running with Docker  
 
@@ -38,3 +38,4 @@ docker build -t langchain-chatbot .
 
 # Run the Docker container
 docker run -p 8501:8501 langchain-chatbot
+```
